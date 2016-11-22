@@ -2,15 +2,9 @@
 .menu_block  {
 	z-index: 999;
 	position: relative;
-	border-top: 1px solid #d9d9d9;
 	border-bottom: 1px solid #d9d9d9;
 	padding-bottom: 35px;
 	padding-top: 35px;
-}
-
-
-.page1 .menu_block {
-	border-top: 0;
 }
 
 .menu_block nav {

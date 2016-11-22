@@ -7,21 +7,21 @@ require 'header.php';
     <section class="content">
       <ul id="slippry">
           <li>
-              <a href="#slide1"><img src="images/slide.jpg" alt="Best Cleaning Services"></a>
+              <img src="images/slide.jpg" alt="Best Cleaning Services">
           </li>
           <li>
-              <a href="#slide1"><img src="images/slide1.jpg" alt="Keeping Your Home Clean"></a>
+              <img src="images/slide1.jpg" alt="Keeping Your Home Clean">
           </li>
           <li>
-              <a href="#slide1"><img src="images/slide2.jpg" alt="Tidy and Perfect"></a>
+              <img src="images/slide2.jpg" alt="Tidy and Perfect">
           </li>
       </ul>
-        <div class="container_12">
-            <div class="grid_12">
+        <div class="container">
+            <div class="col-md-12">
                 <h2>What We Do</h2>
             </div>
-            <div class="grid_3 prefix_3">
-                <a href="#" class="box">
+            <div class="col-md-3 col-md-offset-3">
+                <a href="/services" class="box">
                     <div class="maxheight">
                         <img src="images/page1_img1.jpg" alt="">
                         <div class="box_bot">
@@ -31,8 +31,8 @@ require 'header.php';
                     </div>
                 </a>
             </div>
-            <div class="grid_3">
-                <a href="#" class="box">
+            <div class="col-md-3">
+                <a href="/services" class="box">
                     <div class="maxheight">
                         <img src="images/page1_img2.jpg" alt="">
                         <div class="box_bot">
@@ -70,12 +70,17 @@ require 'header.php';
         <div class="container_12">
             <div class="grid_6">
                 <h3>About</h3>
-                <p>Any questions about this <span class="color1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="nofollow">freebie</a></span>? Go ahead and find everything you need to know here. </p>
-                <p>A variety of alike <span class="color1"><a href="http://www.templatemonster.com/category/maintenance-website-templates/" rel="nofollow">designs</a></span> you can see at TemplateMonster’s website.</p>
-                Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Integer convallis orci vel mi laoreet, at ornare lorem consequat. Phasellus erat nisl, auctor vel velit sed, pharetra venenatis nulla. Vestibulum volutpat
-                turpis ut massa commodo, quis aliquam massa facilisisonec non sapien a erat
-                <br>
-                <a href="#" class="link1">more</a>
+                <p>
+                  I'm Judit Major and I have been working here in Bristol for the past 3 years or so as Cleaner / Housekeeper and now I'm working as self-employed.
+                  <br>
+                  As part of my previous work experience I've been involved with the followings:
+                </p>
+                  <ul class="padded">
+                    <li>Office Cleaning: cleaning of offices, emptying rubbish bins, refilling soap, toilet paper, etc. in the facilities.</li>
+                    <li>Hotel Room Cleaning: changing sheets, cleaning bathrooms, vacuum cleaning.</li>
+                    <li>Accommodation Cleaning: cleaning of common areas.</li>
+                  </ul>
+                <p>If you need any help with cleaning, just <span class="color1"><a href="/contact" rel="nofollow">contact me</a></span>.</p>
             </div>
             <div class="clear"></div>
             <div class="grid_12">
@@ -85,30 +90,6 @@ require 'header.php';
         <div class="clear"></div>
         <!-- Elastislide Carousel -->
         <ul id="carousel" class="elastislide-list">
-            <li>
-                <a href="#"><img src="images/gall_img1.jpg" alt="image01" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/gall_img2.jpg" alt="image02" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/gall_img3.jpg" alt="image03" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/gall_img4.jpg" alt="image04" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/gall_img5.jpg" alt="image05" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/gall_img6.jpg" alt="image06" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/gall_img7.jpg" alt="image07" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/gall_img8.jpg" alt="image08" /></a>
-            </li>
             <li>
                 <a href="#"><img src="images/gall_img1.jpg" alt="image01" /></a>
             </li>

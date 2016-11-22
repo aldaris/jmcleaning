@@ -14,6 +14,43 @@ html {
     width: 100%;
 }
 
+input.form-control:invalid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT1JREFUeNpi/P//PwMpgImBRMACY/x7/uDX39sXt/67cMoDyOVgMjBjYFbV/8kkqcCBrIER5KS/967s+rmkXxzI5wJiRSBm/v8P7NTfHHFFl5mVdIzhGv4+u///x+xmuAlcdXPB9KeqeLgYd3bDU2ZpRRmwH4DOeAI07QXIRKipYPD35184/nn17CO4p/+cOfjl76+/X4GYAYThGn7/g+Mfh/ZZwjUA/aABpJVhpv6+dQUjZP78Z0YEK7OezS2gwltg64GmfTu6i+HL+mUMP34wgvGvL78ZOEysf8M1sGgZvQIqfA1SDAL8iUUMPIFRQLf+AmMQ4DQ0vYYSrL9vXDz2sq9LFsiX4dLRA0t8OX0SHKzi5bXf2HUMBVA0gN356N7p7xdOS3w5fAgcfNxWtn+BJi9gVVBOQfYPQIABABvRq3BwGT3OAAAAAElFTkSuQmCC);
+		background-repeat: no-repeat;
+		background-position: right;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow-x: hidden;
+    background-image: url('/images/loading.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.notification {
+    display: none;
+    margin: 20px auto -30px auto;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    color: #ffffff;
+    background-color: #79c4ca;
+}
+
+form.form-horizontal {
+    margin-top: 15px;
+}
+
 a[href^="tel:"] {
     color: inherit;
     text-decoration: none;
@@ -38,8 +75,8 @@ address {
     font-style: normal;
 }
 
-p {
-    margin-bottom: 20px;
+ul.padded {
+    margin-left: 30px;
 }
 
 .p1 {
@@ -78,20 +115,15 @@ h2.head1 {
 }
 
 h3 {
-    padding-top: 69px;
-    margin-bottom: 30px;
-    font: 30px/43px 'Dosis', sans-serif;
-}
-
-.page1 h3 {
-    padding-top: 98px;
+    padding-top: 40px;
     margin-bottom: 15px;
+    font: 30px/43px 'Dosis', sans-serif;
 }
 
 h4 {
     font-size: 24px;
     line-height: 40px;
-    padding-top: 70px;
+    padding-top: 40px;
     margin-bottom: 34px;
 }
 
@@ -108,13 +140,7 @@ h4.head2 {
 
 /****Lists****/
 
-ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.list {}
+.pricelist {}
 
 .list .count {
     margin-top: 4px;
@@ -137,19 +163,20 @@ ul {
     margin-top: 35px;
 }
 
-.list1 {
+.servicelist {
+    list-style: none;
     margin-top: -3px;
 }
 
-.list1 li {
+.servicelist li {
     position: relative;
 }
 
-.list1 li+li {
+.servicelist li+li {
     margin-top: 10px;
 }
 
-.list1 li a:after {
+.servicelist li a:after {
     transition: 0.5s ease;
     -o-transition: 0.5s ease;
     -webkit-transition: 0.5s ease;
@@ -162,31 +189,41 @@ ul {
     height: 1px;
 }
 
-.list1 li a:hover:after {
+.servicelist li a:hover:after {
     background-color: #3da9b6;
     width: 0;
 }
 
-.list2 {
+.table th {
+    border-bottom: 2px solid #ddd;
+    border-top: none !important;
+ }
+
+.table tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.pricelist {
+    list-style: none;
     margin-top: -4px;
 }
 
-.list2 li {
+.pricelist li {
     background: url(../images/dots.png) 0 72% repeat-x;
     overflow: hidden;
 }
 
-.list2 li+li {
+.pricelist li+li {
     margin-top: 16px;
 }
 
-.list2 .prod {
+.pricelist .prod {
     float: left;
     padding-right: 3px;
     background-color: #fff;
 }
 
-.list2 .price {
+.pricelist .price {
     padding-left: 3px;
     float: right;
     background-color: #fff;
@@ -210,19 +247,6 @@ a {
 
 a:hover {
     color: #3da9b6;
-}
-
-.btn {
-    margin-top: 73px;
-    color: #fff;
-    display: inline-block;
-    padding: 22px 62px 24px;
-    background-color: #3da9b6;
-    font: bold 30px/40px 'Dosis', sans-serif;
-}
-
-.btn:hover {
-    background-color: #1d1d1d;
 }
 
 .link1 {
@@ -537,7 +561,7 @@ footer {
 }
 
 .top {
-    margin-bottom: 61px;
+    margin-bottom: 40px;
     display: inline-block;
     background: url(../images/totop.png) 0 0 no-repeat;
     width: 82px;

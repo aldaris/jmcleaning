@@ -5,21 +5,21 @@
     <title>Judit Major</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico">
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="css/slippry.css">
-    <link rel="stylesheet" href="css/elastislide.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/form.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.1.1.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/superfish.js"></script>
-    <script src="js/jquery.equalheights.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/slippry.js"></script>
-    <script src="js/modernizr.custom.17475.js"></script>
-    <script src="js/TMForm.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/slippry.css">
+    <link rel="stylesheet" href="/css/elastislide.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery-migrate-1.1.1.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/superfish.js"></script>
+    <script src="/js/jquery.equalheights.js"></script>
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <script src="/js/slippry.js"></script>
+    <script src="/js/modernizr.custom.17475.js"></script>
     <script>
         $(document).ready(function() {
             jQuery('#slippry').slippry()
@@ -43,9 +43,10 @@
       <script src="js/html5shiv.js"></script>
       <link rel="stylesheet" media="screen" href="css/ie.css">
     <![endif]-->
+    <?php echo $resource; ?>
 </head>
 
-<body class="page1" id="top">
+<body id="top">
     <!--==============================header=================================-->
     <header>
         <div class="container_12">
@@ -63,10 +64,8 @@
             <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                 <ul class="sf-menu">
                     <li <?php echo ($page === 'home') ? 'class="current"' : '';?>><a href="/">Home</a></li>
-                    <!-- <li><a href="index-1.html">About</a></li> -->
                     <li <?php echo ($page === 'services') ? 'class="current"' : '';?>><a href="/services">Services</a></li>
-                    <li <?php echo ($page === 'prices') ? 'class="current"' : '';?>><a href="/prices">Our Prices</a></li>
-                    <li <?php echo ($page === 'contacts') ? 'class="current"' : '';?>><a href="/contacts">Contacts</a></li>
+                    <li <?php echo ($page === 'contact') ? 'class="current"' : '';?>><a href="/contact">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="clear"></div>
