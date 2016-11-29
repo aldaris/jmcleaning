@@ -1,6 +1,8 @@
 <?php
+
 $page = 'contact';
 $resource = '<script src="https://www.google.com/recaptcha/api.js"></script>';
+require '../config.php';
 require 'header.php';
 ?>
 
@@ -42,7 +44,7 @@ require 'header.php';
           </div>
         </div>
         <div class="form-group">
-          <div class="col-sm-9 col-sm-offset-3 g-recaptcha" data-sitekey="6LfqrdoSAAAAAB4Mkc4zw48Avb0x7SAjPRxamcGE"></div>
+          <div class="col-sm-9 col-sm-offset-3 g-recaptcha" data-sitekey="<?php echo $siteKey ?>"></div>
         </div>
         <button type="submit" class="btn btn-primary pull-right">Send</button>
       </form>
