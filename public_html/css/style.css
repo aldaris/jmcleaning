@@ -47,6 +47,10 @@ input.form-control:invalid {
     background-color: #79c4ca;
 }
 
+.notification.error {
+    background-color: #ca7979;
+}
+
 form.form-horizontal {
     margin-top: 15px;
 }
@@ -344,7 +348,7 @@ a:hover {
 
 header {
     display: block;
-    padding-top: 40px;
+    padding-top: 20px;
     position: relative;
     overflow: hidden;
 }

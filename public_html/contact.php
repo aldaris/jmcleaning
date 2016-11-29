@@ -38,7 +38,7 @@ require 'header.php';
         <div class="form-group">
           <label class="col-sm-3 control-label" for="message">Message</label>
           <div class="col-sm-9">
-            <textarea rows="8" class="form-control" name="message"></textarea>
+            <textarea rows="8" class="form-control" name="message" required></textarea>
           </div>
         </div>
         <div class="form-group">

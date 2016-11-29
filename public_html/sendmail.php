@@ -1,27 +1,35 @@
 <?php
-    require_once 'Mail.php';
+    require_once __DIR__ . '/../vendor/autoload.php';
     require '../config.php';
 
     //SMTP server settings
     $host = "ssl://smtp.gmail.com";
     $port = "465";
 
-    $name = '';
-    $from = '';
-    $phonenumber = '';
     $messageBody = '';
 
+    if (isset($_POST['g-recaptcha-response'])) {
+        $response = $_POST['g-recaptcha-response'];
+        $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+        $result = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+        if (!$result->isSuccess()) {
+            echo '{"success": false, "message": "Unable to verify CAPTCHA, please try again."}';
+            return;
+        }
+    } else {
+        echo '{"success": false, "message", "Invalid request."}';
+        return;
+    }
+
     if (isset($_POST['name'])) {
-        $name = filter_var($_POST['name'], FILTER_SANITIZE_EMAIL);
-        $messageBody .= 'Visitor: ' . $name . "\n";
+        $messageBody .= 'Name: ' . $_POST['name'] . "\n";
     }
     if (isset($_POST['email'])) {
         $from = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-        $messageBody .= 'Email Address: ' . $from . "\n";
+        $messageBody .= 'E-mail: ' . $from . "\n";
     }
     if (isset($_POST['phonenumber'])) {
-        $phonenumber = filter_var($_POST['phonenumber'], FILTER_SANITIZE_EMAIL);
-        $messageBody .= 'Phone Number: ' . $phonenumber . "\n";
+        $messageBody .= 'Phone #: ' . $_POST['phonenumber'] . "\n";
     }
     if (isset($_POST['message'])) {
         $messageBody .= 'Message: ' . "\n" . $_POST['message'] . "\n";
@@ -30,7 +38,7 @@
     $messageBody = htmlspecialchars($messageBody);
 
     $headers = array(
-      'From' => 'From:' . $from,
+      'From' => 'From:' . $sender,
       'Content-Type' => 'text/plain; charset=UTF-8',
       'To' => $to,
       'Subject' => 'A message from your site visitor'
@@ -45,8 +53,6 @@
                     'username' => $username,
                     'password' => $password));
 
-sleep(5);
-echo '{"success": true}'; die();
     $mail = $smtp->send($to, $headers, $messageBody);
 
     header('Content-Type', 'application/json');

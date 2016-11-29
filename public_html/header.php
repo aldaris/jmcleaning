@@ -43,7 +43,7 @@
       <script src="js/html5shiv.js"></script>
       <link rel="stylesheet" media="screen" href="css/ie.css">
     <![endif]-->
-    <?php echo $resource; ?>
+    <?php echo isset($resource) ? $resource : ''; ?>
 </head>
 
 <body id="top">

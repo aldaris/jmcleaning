@@ -59,16 +59,31 @@ $(document).ready(function() {
                 beforeSend: function() {
                     $('.overlay').show();
                     $('body').addClass("modal-open");
+                    $('.notification').hide();
+                    $('.notification').removeClass('error');
                 }
             }).done(function(data, textStatus, jqXHR) {
                 $('.overlay').hide();
                 $('body').removeClass("modal-open");
+                grecaptcha.reset();
                 if (jqXHR.status === 200 && jqXHR.responseJSON && jqXHR.responseJSON.success) {
                     $(":input").val('');
                     $(".notification").text('Your e-mail has been successfully sent, we will get back to you shortly.').fadeIn();
                 } else {
-                    $(".notification").text('We were unable to send your e-mail, please try again later.').fadeIn();
+                    $(".notification").addClass('error');
+                    if (jqXHR.responseJSON && jqXHR.responseJSON.message) {
+                        $(".notification").text(jqXHR.responseJSON.message).fadeIn();
+                    } else {
+                        $(".notification").text('We were unable to send your e-mail, please try again later.').fadeIn();
+                    }
                 }
+            }).fail(function(xhr, status, error) {
+                $('.overlay').hide();
+                $('body').removeClass("modal-open");
+                $(".notification").addClass('error');
+                $(".notification").text('We were unable to send your e-mail, please try again later.').fadeIn();
+                console.log("Status: " + status + " Error: " + error);
+                console.log(xhr);
             });
             event.preventDefault();
         });
