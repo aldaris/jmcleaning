@@ -91,28 +91,28 @@ require 'header.php';
         <!-- Elastislide Carousel -->
         <ul id="carousel" class="elastislide-list">
             <li>
-                <a href="#"><img src="images/gall_img1.jpg" alt="image01" /></a>
+                <img src="images/gallery_1.jpeg" alt="image01" />
             </li>
             <li>
-                <a href="#"><img src="images/gall_img2.jpg" alt="image02" /></a>
+                <img src="images/gallery_2.jpeg" alt="image02" />
             </li>
             <li>
-                <a href="#"><img src="images/gall_img3.jpg" alt="image03" /></a>
+                <img src="images/gallery_3.jpeg" alt="image03" />
             </li>
             <li>
-                <a href="#"><img src="images/gall_img4.jpg" alt="image04" /></a>
+                <img src="images/gallery_4.jpeg" alt="image04" />
             </li>
             <li>
-                <a href="#"><img src="images/gall_img5.jpg" alt="image05" /></a>
+                <img src="images/gallery_5.jpeg" alt="image05" />
             </li>
             <li>
-                <a href="#"><img src="images/gall_img6.jpg" alt="image06" /></a>
+                <img src="images/gallery_6.jpeg" alt="image06" />
             </li>
             <li>
-                <a href="#"><img src="images/gall_img7.jpg" alt="image07" /></a>
+                <img src="images/gallery_7.jpeg" alt="image07" />
             </li>
             <li>
-                <a href="#"><img src="images/gall_img8.jpg" alt="image08" /></a>
+                  <img src="images/gallery_8.jpeg" alt="image08" />
             </li>
         </ul>
         <!-- End Elastislide Carousel -->
