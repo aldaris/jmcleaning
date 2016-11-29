@@ -22,13 +22,13 @@ require 'header.php';
         <div class="form-group">
           <label class="col-sm-3 control-label" for="name">Name</label>
           <div class="col-sm-9">
-            <input class="form-control" name="name" type="text" placeholder="John Doe" required />
+            <input class="form-control" name="name" type="text" placeholder="John Smith" required />
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-3 control-label" for="email">E-mail address</label>
           <div class="col-sm-9">
-            <input class="form-control" name="email" type="email" placeholder="john.doe@example.com" required />
+            <input class="form-control" name="email" type="email" placeholder="john.smith@example.com" required />
           </div>
         </div>
         <div class="form-group">

@@ -71,9 +71,9 @@ require 'header.php';
             <div class="grid_6">
                 <h3>About</h3>
                 <p>
-                  I'm Judit Major and I have been working here in Bristol for the past 3 years or so as Cleaner / Housekeeper and now I'm working as self-employed.
+                  I'm Judit Major and I have been working here in Bristol for the past 3 years as a Cleaner / Housekeeper and I'm now self-employed.
                   <br>
-                  As part of my previous work experience I've been involved with the followings:
+                  As part of my previous work experience I've been involved with the following:
                 </p>
                   <ul class="padded">
                     <li>Office Cleaning: cleaning of offices, emptying rubbish bins, refilling soap, toilet paper, etc. in the facilities.</li>

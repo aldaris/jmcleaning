@@ -19,13 +19,13 @@ require 'header.php';
           <tbody>
             <tr>
               <td>House Cleaning</td>
-              <td>£12</td>
-              <td>£15</td>
+              <td>£12/hour</td>
+              <td>£15/hour</td>
             </tr>
             <tr>
               <td>Office cleaning</td>
-              <td>£9</td>
-              <td>£10</td>
+              <td>£9/hour</td>
+              <td>£10/hour</td>
             </tr>
           </tbody>
         </table>
@@ -63,7 +63,7 @@ require 'header.php';
           <li><a href="#">Ironing (hourly)</a></li>
           <li><a href="#">Window cleaning - inside</a></li>
           <li><a href="#">Fridge, freezer deep clean with defrost</a></li>
-          <li><a href="#">Drain clean in the bathroom / kitchen</a></li>
+          <li><a href="#">Drain cleaning in the bathroom / kitchen</a></li>
           <li><a href="#">Clean inside oven</a></li>
           <li><a href="#">Descale in the bathroom</a></li>
         </ul>
@@ -79,8 +79,8 @@ require 'header.php';
       <img src="images/icon1.png" alt="" class="icon1">
       <div class="extra_wrapper">
         <p class="color1"><a href="#">Cleaning Chemicals</a></p>
-        <p>My stock has a wide variety of cleaning chemicals for all types of cleaning jobs, from industry recognised brands such as Jantex, Mr Muscle, Domestos and more...</p>
-        If do you have any allergy problem, just let me know, and I can use an alternative cleaning product instead.
+        <p>I stock a wide variety of cleaning chemicals for all types of cleaning jobs, including industry-recognised brands such as Jantex, Mr Muscle, Domestos, and more...</p>
+        <p>If you have any allergies just let me know and I can use an alternative cleaning product instead.</p>
       </div>
       <div class="clear"></div>
     </div>
@@ -124,7 +124,7 @@ require 'header.php';
       <div class="extra_wrapper">
         <p class="color1"><a href="#">Keep things tidy</a></p>
         <p>Organised and tidy homes look so much better, I can help you with that.</p>
-        If you spend a little time every day to organize your household, your home will be in a much better state just in a few days.
+        <p>If you spend a little time every day to organise your household, your home will be in a much better state just in a few days.</p>
       </div>
       <div class="clear"></div>
     </div>
