@@ -379,6 +379,8 @@ header .logo a {
 
 header .logo a img {
     display: block;
+    width: 180px;
+    height: 109px;
 }
 
 
