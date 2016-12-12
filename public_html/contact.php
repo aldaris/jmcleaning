@@ -2,7 +2,6 @@
 
 $page = 'contact';
 $resource = '<script src="https://www.google.com/recaptcha/api.js"></script>';
-require '../config.php';
 require 'header.php';
 ?>
 

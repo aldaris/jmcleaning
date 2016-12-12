@@ -1,6 +1,6 @@
 <?php
     require_once __DIR__ . '/../vendor/autoload.php';
-    require '../config.php';
+    require_once '../config.php';
 
     //SMTP server settings
     $host = "ssl://smtp.gmail.com";
