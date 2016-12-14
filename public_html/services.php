@@ -25,7 +25,7 @@ require 'header.php';
             <tr>
               <td>Office cleaning</td>
               <td>£9/hour</td>
-              <td>£10/hour</td>
+              <td>£12/hour</td>
             </tr>
           </tbody>
         </table>
