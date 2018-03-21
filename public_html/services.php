@@ -19,13 +19,13 @@ require 'header.php';
           <tbody>
             <tr>
               <td>House Cleaning</td>
-              <td>£12/hour</td>
-              <td>£15/hour</td>
+              <td>£13/hour</td>
+              <td>£16/hour</td>
             </tr>
             <tr>
               <td>Office cleaning</td>
-              <td>£11/hour</td>
               <td>£12/hour</td>
+              <td>£13/hour</td>
             </tr>
           </tbody>
         </table>
