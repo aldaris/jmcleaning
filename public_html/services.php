@@ -8,6 +8,7 @@ require 'header.php';
     <div class="col-md-12">
       <div class="col-md-8 col-md-offset-2">
         <h4 class="head1">Our Prices</h4>
+        <div class="alert alert-info" role="alert">Discount: New customers in Paulton area from £10/hour only!</div>
         <table class="table">
           <thead>
             <tr>
